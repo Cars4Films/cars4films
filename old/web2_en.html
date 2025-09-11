@@ -1,0 +1,399 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars4Films - Car Rental for Film and Advertising</title>
+    <meta name="description" content="Cars4Films offers an exclusive fleet of vehicles for film and advertising productions in Spain. Classic cars, sports cars, technical vehicles, and precision drivers.">
+    <meta name="keywords" content="film car rental, vehicles for movies, cars for advertising, precision driver, cars for films, sports car rental, classic cars, Madrid, Barcelona">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #e5e7eb;
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+            transform: scale(1.05);
+        }
+        #tecnicos h2, #tecnicos h3, #tecnicos p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Entry Animation */
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-75 backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-white animate-fade-in-up">
+                <img src="logo.jpeg" alt="Cars4Films Logo" class="h-11 md:h-14">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center animate-fade-in-up">
+                <a href="#flota" class="nav-link transition duration-300">Fleet</a>
+                <a href="#tecnicos" class="nav-link transition duration-300">Technicians</a>
+                <a href="#carcare" class="nav-link transition duration-300">Car Care</a>
+                <a href="#driver" class="nav-link transition duration-300">Precision Driver</a>
+                <a href="#acerca" class="nav-link transition duration-300">About</a>
+                <a href="#testimonios" class="nav-link transition duration-300">Testimonials</a>
+                <a href="#proyectos" class="nav-link transition duration-300">Projects</a>
+                <a href="#contacto" class="nav-link transition duration-300">Contact</a>
+                <div class="relative ml-4">
+                    <button id="lang-button" class="px-3 py-2 text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition duration-300 focus:outline-none">
+                        Language
+                        <svg class="h-4 w-4 inline-block ml-1 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="lang-menu" class="hidden absolute right-0 mt-2 py-2 w-40 bg-gray-800 rounded-lg shadow-xl">
+                        <a href="web_en.html" class="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300" data-lang="en">English</a>
+                        <a href="index.html" class="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300" data-lang="es">Spanish</a>
+                    </div>
+                </div>
+            </div>
+            <button id="menu-button" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black py-2">
+            <a href="#flota" class="block px-4 py-2 text-white hover:bg-gray-900 transition duration-300">Fleet</a>
+            <a href="#tecnicos" class="block px-4 py-2 text-white hover:bg-gray-900 transition duration-300">Technicians</a>
+            <a href="#carcare" class="block px-4 py-2 text-white hover:bg-gray-900 transition duration-300">Car Care</a>
+            <a href="#driver" class="block px-4 py-2 text-white hover:bg-gray-900 transition duration-300">Precision Driver</a>
+            <a href="#acerca" class="block px-4 py-2 text-white hover:bg-gray-900 transition duration-300">About</a>
+            <a href="#testimonios" class="block px-4 py-2 text-white hover:bg-gray-900 transition duration-300">Testimonials</a>
+            <a href="#proyectos" class="block px-4 py-2 text-white hover:bg-gray-900 transition duration-300">Projects</a>
+            <a href="#contacto" class="block px-4 py-2 text-white hover:bg-gray-900 transition duration-300">Contact</a>
+            <div class="px-4 py-2">
+                <button id="lang-button-mobile" class="w-full text-left px-3 py-2 text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition duration-300 focus:outline-none">
+                    Language
+                    <svg class="h-4 w-4 inline-block float-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="lang-menu-mobile" class="hidden mt-2 py-2 bg-gray-800 rounded-lg shadow-xl">
+                    <a href="web_en.html" class="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300" data-lang="en">English</a>
+                    <a href="index.html" class="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300" data-lang="es">Spanish</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen bg-center bg-cover flex items-center justify-center text-center bg-black">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <img src="logo.png" alt="Cars4Films Logo" class="h-[50rem] w-auto opacity-50">
+        </div>
+        <div class="relative z-10 p-8 md:p-16 animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4 drop-shadow-lg">
+                The perfect car for every scene
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-md">
+                At Cars4Films, we don't just rent vehicles, we provide solutions on wheels. Our collection is ready to be the star of your next film or advertising production.
+            </p>
+            <a href="#flota" class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                Explore Our Fleet
+            </a>
+        </div>
+    </header>
+
+    <section id="acerca" class="py-20 bg-black">
+        <div class="container mx-auto px-4 animate-fade-in-up">
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="marcos.jpeg" alt="Image of a classic car" class="rounded-2xl shadow-xl w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-4 text-white">Our Story</h2>
+                    <p class="text-lg text-gray-400 mb-6">
+                        Cars4Films was born from a passion for cars and cinema. We understood that a vehicle can be much more than a means of transport; it can be a character, a key piece in the narrative of a film. That's why we are dedicated to managing a collection of vehicles that have the personality and charisma to stand out on the big screen.
+                    </p>
+                    <p class="text-lg text-gray-400">
+                        Our team of experts will help you find the perfect vehicle for your artistic vision, ensuring that every detail is impeccable, from aesthetics to logistics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flota" class="py-20 bg-black">
+        <div class="container mx-auto px-4 animate-fade-in-up">
+            <h2 class="text-4xl font-bold text-center mb-4">Our Fleet</h2>
+            <p class="text-center text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+                An unparalleled selection of vehicles, ready for your next production.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
+                    <img src="clasico.jpg" alt="Classic Cars" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-white">Classic & Vintage Cars</h3>
+                        <p class="text-gray-400">
+                            Travel back in time with our collection of antique cars and elegant convertibles.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
+                    <img src="deportivo.jpeg" alt="Sports Cars" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-white">Sports & Supercars</h3>
+                        <p class="text-gray-400">
+                            The perfect choice for high-octane scenes, luxury, and speed.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
+                    <img src="policia.jpg" alt="Specialty Vehicles" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-white">Specialty Vehicles</h3>
+                        <p class="text-gray-400">
+                            From police cars to industrial vehicles and action-ready models.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="buscador.html" class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                    Find a Vehicle
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnicos" class="py-20 bg-black">
+        <div class="container mx-auto px-4 animate-fade-in-up">
+            <h2 class="text-4xl font-bold text-center mb-4">Technical Vehicles</h2>
+            <p class="text-center text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+                Specialized production vehicles to capture the perfect shot.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <a href="#tecnicos" class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl p-6 text-center transform transition duration-300 hover:scale-105 hover:bg-gray-800">
+                    <img src="camaracar.jpg" alt="Camaracar in action" class="w-full h-32 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">Camera Car</h3>
+                    <p class="text-gray-400">High-power and stable vehicles for chase and tracking shots. </p>
+                </a>
+                <a href="#tecnicos" class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl p-6 text-center transform transition duration-300 hover:scale-105 hover:bg-gray-800">
+                    <img src="lowloader.jpg" alt="Low Loader platform" class="w-full h-32 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">Low Loader</h3>
+                    <p class="text-gray-400">Low-profile transport platforms to safely move cars on set.</p>
+                </a>
+                <a href="#tecnicos" class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl p-6 text-center transform transition duration-300 hover:scale-105 hover:bg-gray-800">
+                    <img src="furgo.jpg" alt="On-set support vehicle" class="w-full h-32 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">Support Vehicles</h3>
+                    <p class="text-gray-400">Vans and trucks equipped to meet any technical needs on set.</p>
+                </a>
+                <a href="#tecnicos" class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl p-6 text-center transform transition duration-300 hover:scale-105 hover:bg-gray-800">
+                    <img src="motocam.jpg" alt="Motorcycle in an action scene" class="w-full h-32 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">Motorbikes</h3>
+                    <p class="text-gray-400">Electric motorbikes for agile action scenes or urban shots that require speed and maneuverability.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="carcare" class="py-20 bg-black">
+        <div class="container mx-auto px-4 animate-fade-in-up">
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="carcare.png" alt="Detail of a clean car" class="rounded-2xl shadow-xl w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-4 text-white">Car Care</h2>
+                    <p class="text-lg text-gray-400 mb-6">
+                        Keep your vehicles in perfect condition for filming with our Carcare and Mechanical Carcare service. Our specialized team takes care of the cleaning, maintenance, and preparation of each vehicle so it looks impeccable in every shot, always adapting to the needs of the production.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Deep interior and exterior cleaning, upon request.</li>
+                        <li>Vehicle preparation for every need.</li>
+                        <li>Engine maintenance for optimal performance.</li>
+                        <li>On-set repairs based on requested premises.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="driver" class="py-20 bg-black">
+        <div class="container mx-auto px-4 animate-fade-in-up">
+            <div class="md:flex md:items-center md:space-x-12 flex-row-reverse">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="precision2.png" alt="Specialized driver in an action scene" class="rounded-2xl shadow-xl w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-4 text-white">Precision Driver</h2>
+                    <p class="text-lg text-gray-400 mb-6">
+                        Our drivers are highly trained to perform complex maneuvers safely and controlled, ensuring a smooth and trouble-free shoot. Trust our experts for stunt scenes, stunt doubles for actors, and precise driving.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Stunt drivers for chase scenes.</li>
+                        <li>Driving doubles for actors.</li>
+                        <li>Handling of high-end and classic vehicles.</li>
+                        <li>Technical advice in the planning of action scenes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-20 bg-black">
+        <div class="container mx-auto px-4 animate-fade-in-up">
+            <h2 class="text-4xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl">
+                    <p class="text-xl italic text-gray-300 mb-4">
+                        "The Cars4Films team was incredibly professional and helped us find the perfect car for our film. The service exceeded all expectations!"
+                    </p>
+                    <p class="font-semibold text-white">- Ana Torres, Art Director</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl">
+                    <p class="text-xl italic text-gray-300 mb-4">
+                        "Their fleet is impressive. We found a classic car that was exactly what we needed for our commercial. Impeccable logistics."
+                    </p>
+                    <p class="font-semibold text-white">- Marcos Gil, Producer</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl">
+                    <p class="text-xl italic text-gray-300 mb-4">
+                        "The quality of the vehicles and the attention to detail are unbeatable. Cars4Films is our first choice for any project."
+                    </p>
+                    <p class="font-semibold text-white">- Laura Pérez, Event Planner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-20 bg-black">
+        <div class="container mx-auto px-4 animate-fade-in-up">
+            <h2 class="text-4xl font-bold text-center mb-4">Completed Projects</h2>
+            <p class="text-center text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+                A selection of our most outstanding works in film, television, and advertising.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="carprosolutions.jpg" alt="Car in an advertising scene" class="rounded-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105 shadow-md">
+                <img src="https://placehold.co/600x400/374151/d1d5db?text=Movie+X" alt="Sports car on the street" class="rounded-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105 shadow-md">
+                <img src="https://placehold.co/600x400/374151/d1d5db?text=Commercial+Y" alt="Detail of a classic car's interior" class="rounded-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105 shadow-md">
+                <img src="https://placehold.co/600x400/374151/d1d5db?text=Series+Z" alt="Technical vehicle during a film shoot" class="rounded-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105 shadow-md">
+                <img src="https://placehold.co/600x400/374151/d1d5db?text=Music+Video" alt="Classic car with neon lights" class="rounded-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105 shadow-md">
+                <img src="https://placehold.co/600x400/374151/d1d5db?text=Short+Film" alt="Car in a chase scene" class="rounded-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105 shadow-md">
+                <img src="https://placehold.co/600x400/374151/d1d5db?text=Photography" alt="Artistic photo of a luxury car" class="rounded-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105 shadow-md">
+                <img src="https://placehold.co/600x400/374151/d1d5db?text=Event" alt="Car used for a corporate event" class="rounded-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105 shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 bg-black">
+        <div class="container mx-auto px-4 max-w-2xl animate-fade-in-up">
+            <h2 class="text-4xl font-bold text-center mb-4">Contact Us</h2>
+            <p class="text-center text-lg text-gray-400 mb-8">
+                We are ready to help you find the perfect vehicle for your next project. Send us a message and we will respond shortly.
+            </p>
+            <form id="contact-form" class="bg-gray-900 p-8 rounded-2xl shadow-xl">
+                <div class="mb-4">
+                    <label for="nombre" class="block text-gray-400 mb-2">Name</label>
+                    <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-400 mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <label for="mensaje" class="block text-gray-400 mb-2">Message</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
+                </div>
+                <button type="submit" class="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                    Send Message
+                </button>
+            </form>
+            <div id="form-message" class="mt-4 text-center text-green-400 hidden">
+                Thank you! Your message has been sent successfully.
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-gray-500">
+        <p>&copy; 2025 Cars4Films. All rights reserved.</p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="hover:text-white transition duration-200">Facebook</a>
+            <a href="#" class="hover:text-white transition duration-200">Instagram</a>
+            <a href="#" class="hover:text-white transition duration-200">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu logic
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Language selector logic (desktop and mobile)
+        const langButton = document.getElementById('lang-button');
+        const langMenu = document.getElementById('lang-menu');
+        const langButtonMobile = document.getElementById('lang-button-mobile');
+        const langMenuMobile = document.getElementById('lang-menu-mobile');
+
+        const toggleMenu = (menu) => {
+            menu.classList.toggle('hidden');
+        };
+
+        langButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            toggleMenu(langMenu);
+        });
+        langButtonMobile.addEventListener('click', (event) => {
+            event.stopPropagation();
+            toggleMenu(langMenuMobile);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!langButton.contains(event.target) && !langMenu.contains(event.target)) {
+                langMenu.classList.add('hidden');
+            }
+            if (!langButtonMobile.contains(event.target) && !langMenuMobile.contains(event.target)) {
+                langMenuMobile.classList.add('hidden');
+            }
+        });
+
+        // Form logic (simulated)
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            
+            // Simulates form submission (in a real site, you would make a fetch request here)
+            setTimeout(() => {
+                contactForm.reset(); // Clear fields
+                formMessage.classList.remove('hidden'); // Show success message
+                
+                // Hide the message after a few seconds
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
