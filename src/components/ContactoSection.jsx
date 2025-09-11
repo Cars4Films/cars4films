@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactoSection = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -43,25 +45,23 @@ const ContactoSection = () => {
       <div className="container mx-auto px-4 animate-fade-in-up">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-white">
-            Contacta con Nosotros
+            {t('contacto.title')}
           </h2>
           <p className="text-center text-lg text-gray-400 mb-12">
-            Cuéntanos qué necesitas para tu producción y te ayudaremos a
-            encontrar los vehículos perfectos.
+            {t('contacto.description')}
           </p>
 
           <div className="bg-gray-800 rounded-2xl p-8 shadow-xl">
             {formSubmitted ? (
               <div className="bg-green-800 text-white p-4 rounded-lg mb-6 animate-fade-in transition-all">
-                ¡Gracias por contactarnos! Responderemos a tu mensaje lo antes
-                posible.
+                {t('contacto.successMessage')}
               </div>
             ) : null}
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-gray-300 mb-2">
-                    Nombre
+                    {t('contacto.nameLabel')}
                   </label>
                   <input
                     type="text"
@@ -75,7 +75,7 @@ const ContactoSection = () => {
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-gray-300 mb-2">
-                    Email
+                    {t('contacto.emailLabel')}
                   </label>
                   <input
                     type="email"
@@ -90,7 +90,7 @@ const ContactoSection = () => {
               </div>
               <div className="mb-6">
                 <label htmlFor="message" className="block text-gray-300 mb-2">
-                  Mensaje
+                  {t('contacto.messageLabel')}
                 </label>
                 <textarea
                   id="message"
@@ -110,7 +110,7 @@ const ContactoSection = () => {
                     isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                   }`}
                 >
-                  {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
+                  {isSubmitting ? t('contacto.sending') : t('contacto.submit')}
                 </button>
               </div>
             </form>

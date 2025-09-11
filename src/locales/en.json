@@ -1,0 +1,134 @@
+{
+  "navbar": {
+    "flota": "Fleet",
+    "tecnicos": "Technical Vehicles",
+    "carcare": "Car Care",
+    "driver": "Precision Drivers",
+    "acerca": "About Us",
+    "testimonios": "Testimonials",
+    "proyectos": "Projects",
+    "contacto": "Contact"
+  },
+  "hero": {
+    "title": "The perfect car for every scene",
+    "description": "At Cars4Films, we don't just rent vehicles, we provide solutions on wheels. Our collection is ready to be the star of your next film or advertising production.",
+    "cta": "Explore Our Fleet",
+    "contact": "Contact Us",
+    "videoFallback": "Your browser does not support the video element."
+  },
+  "acerca": {
+    "title": "Our History",
+    "paragraph1": "Cars4Films was born from a passion for cars and film. We understood that a vehicle can be much more than a means of transport; it can be a character, a key piece in the narrative of a film. That's why we're dedicated to managing a collection of vehicles that have the personality and charisma to stand out on the big screen.",
+    "paragraph2": "Our team of experts will help you find the perfect vehicle for your artistic vision, ensuring that every detail is impeccable, from aesthetics to logistics.",
+    "imageAlt": "Classic car image"
+  },
+  "flota": {
+    "title": "Our Fleet",
+    "description": "We have a wide fleet of vehicles for all types of audiovisual productions. Classic cars, sports cars, special vehicles and more.",
+    "clasicos": {
+      "title": "Classic Cars",
+      "description": "Iconic vehicles from the 50s to the 90s restored and in perfect working order."
+    },
+    "deportivos": {
+      "title": "Sports Cars",
+      "description": "High-performance vehicles for action and chase sequences."
+    },
+    "especiales": {
+      "title": "Special Vehicles",
+      "description": "Police, fire trucks, ambulances and other special vehicles for your productions."
+    },
+    "requestCta": "Request a vehicle"
+  },
+  "tecnicos": {
+    "title": "Technical Vehicles",
+    "description": "Specialized production vehicles to capture the perfect shot.",
+    "camaracar": {
+      "title": "Camera Car",
+      "description": "High-power and stable vehicles for chase and tracking shots."
+    },
+    "lowloader": {
+      "title": "Low Loader",
+      "description": "Low-profile transport platforms for safely moving cars on set."
+    },
+    "asistencia": {
+      "title": "Support Vehicles",
+      "description": "Vans and trucks equipped to cover any technical need on set."
+    },
+    "motos": {
+      "title": "Motorcycles",
+      "description": "Electric motorcycles for agile action scenes or urban shots that require speed and maneuverability."
+    }
+  },
+  "carcare": {
+    "title": "Car Care",
+    "description": "Keep your filming vehicles in perfect condition with our Carcare and Mechanical Carcare service. Our specialized team is in charge of cleaning, maintaining and preparing each vehicle to look impeccable in each shot, always adapting to the needs of the shoot.",
+    "imageAlt": "Detail of a clean car",
+    "services": {
+      "cleaning": "Thorough interior and exterior cleaning, if requested.",
+      "preparation": "Vehicle preparation for each need.",
+      "maintenance": "Engine maintenance for optimal performance.",
+      "repairs": "On-set repairs with the requested premises."
+    }
+  },
+  "driver": {
+    "title": "Precision Drivers",
+    "description": "Our team of specialized drivers has extensive experience in action scenes and precision maneuvers. We coordinate complete driving sequences so that each shot is perfect and safe.",
+    "imageAlt": "Specialized driver in an action scene",
+    "services": {
+      "professional": "Professional drivers with experience in international productions.",
+      "specialists": "Specialists in skids, chases and maneuvers.",
+      "coordination": "Coordination of complex driving sequences.",
+      "safety": "Maximum safety in all maneuvers."
+    }
+  },
+  "testimonios": {
+    "title": "Testimonials",
+    "subtitle": "What our clients say about our services.",
+    "person1": {
+      "name": "Marcos López",
+      "role": "Director of Photography",
+      "quote": "The Cars4Films team always meets our expectations. The vehicles are in perfect condition and their technical team solves any problem quickly."
+    },
+    "person2": {
+      "name": "Laura Sánchez",
+      "role": "Production Director",
+      "quote": "The variety of vehicles and the professionalism of the Cars4Films team has been key to the success of our productions. The Carcare service is exceptional."
+    },
+    "person3": {
+      "name": "Javier Martín",
+      "role": "Director",
+      "quote": "Cars4Films' Precision Drivers have done an impeccable job in my latest film. Their professionalism and skill have been fundamental for the action scenes."
+    }
+  },
+  "proyectos": {
+    "title": "Completed Projects",
+    "description": "A selection of our most outstanding work in film, television and advertising.",
+    "image1Alt": "Car in an advertising scene",
+    "image2Alt": "Sports car on the street",
+    "image3Alt": "Detail of a classic car interior",
+    "image4Alt": "Technical vehicle in filming",
+    "image5Alt": "Classic car with neon lights",
+    "image6Alt": "Car in a chase scene",
+    "image7Alt": "Artistic photo of a luxury car",
+    "image8Alt": "Car used for a corporate event"
+  },
+  "contacto": {
+    "title": "Contact Us",
+    "description": "We are ready to help you find the perfect vehicle for your next project. Send us a message and we will respond as soon as possible.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Thank you for contacting us! We will respond to your message as soon as possible."
+  },
+  "footer": {
+    "contactTitle": "Contact",
+    "address": "Madrid, Spain",
+    "phone": "+34 123 456 789",
+    "email": "info@cars4films.com",
+    "followUs": "Follow Us",
+    "companyDescription": "Specialists in vehicles for the audiovisual industry since 2012. We offer complete solutions for film, advertising and television.",
+    "rights": "All rights reserved"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "navbar": {
+    "flota": "Flota",
+    "tecnicos": "Vehículos Técnicos",
+    "carcare": "Car Care",
+    "driver": "Precision Drivers",
+    "acerca": "Acerca de",
+    "testimonios": "Testimonios",
+    "proyectos": "Proyectos",
+    "contacto": "Contacto"
+  },
+  "hero": {
+    "title": "El coche perfecto para cada escena",
+    "description": "En Cars4Films, no solo alquilamos vehículos, proporcionamos soluciones sobre ruedas. Nuestra colección está lista para ser la estrella de tu próxima producción cinematográfica o publicitaria.",
+    "cta": "Explora Nuestra Flota",
+    "contact": "Contactar",
+    "videoFallback": "Tu navegador no soporta el elemento de video."
+  },
+  "acerca": {
+    "title": "Nuestra Historia",
+    "paragraph1": "Cars4Films nació de la pasión por los coches y el cine. Entendimos que un vehículo puede ser mucho más que un medio de transporte; puede ser un personaje, una pieza clave en la narrativa de una película. Por eso, nos dedicamos a gestionar una colección de vehículos que tienen la personalidad y el carisma para destacar en la gran pantalla.",
+    "paragraph2": "Nuestro equipo de expertos te ayudará a encontrar el vehículo perfecto para tu visión artística, asegurando que cada detalle sea impecable, desde la estética hasta la logística.",
+    "imageAlt": "Imagen de un coche clásico"
+  },
+  "flota": {
+    "title": "Nuestra Flota",
+    "description": "Disponemos de una amplia flota de vehículos para todo tipo de producciones audiovisuales. Coches clásicos, deportivos, vehículos especiales y más.",
+    "clasicos": {
+      "title": "Coches Clásicos",
+      "description": "Vehículos icónicos desde los años 50 hasta los 90 restaurados y en perfecto estado de funcionamiento."
+    },
+    "deportivos": {
+      "title": "Coches Deportivos",
+      "description": "Vehículos de altas prestaciones para secuencias de acción y persecución."
+    },
+    "especiales": {
+      "title": "Vehículos Especiales",
+      "description": "Policía, bomberos, ambulancias y otros vehículos especiales para tus producciones."
+    },
+    "requestCta": "Solicita un vehículo"
+  },
+  "tecnicos": {
+    "title": "Vehículos Técnicos",
+    "description": "Vehículos de producción especializados para capturar la toma perfecta.",
+    "camaracar": {
+      "title": "Camaracar",
+      "description": "Vehículos de alta potencia y estabilidad para tomas de persecución y seguimiento."
+    },
+    "lowloader": {
+      "title": "Low Loader",
+      "description": "Plataformas de transporte de perfil bajo para mover coches de forma segura en el set."
+    },
+    "asistencia": {
+      "title": "Vehículos de Asistencia",
+      "description": "Furgonetas y camiones equipados para cubrir cualquier necesidad técnica en el set."
+    },
+    "motos": {
+      "title": "Motos",
+      "description": "Moto electrica para escenas de acción ágiles o tomas urbanas que exigen velocidad y maniobrabilidad."
+    }
+  },
+  "carcare": {
+    "title": "Car Care",
+    "description": "Mantén tus vehículos de para el rodaje en perfectas condiciones con nuestro servicio de Carcare y Carcare Mecanico. Nuestro equipo especializado se encarga de la limpieza, mantenimiento y preparación de cada vehículo para que luzca impecable en cada toma, adaptandonos siempre a las necesidades del rodaje.",
+    "imageAlt": "Detalle de un coche limpio",
+    "services": {
+      "cleaning": "Limpieza interior y exterior profunda, si se solicita.",
+      "preparation": "Preparacion del vehiculo para cada necesidad.",
+      "maintenance": "Mantenimiento de motor para un rendimiento óptimo.",
+      "repairs": "Reparaciones en el set con las premisas solicitadas."
+    }
+  },
+  "driver": {
+    "title": "Precision Drivers",
+    "description": "Nuestro equipo de conductores especializados cuenta con amplia experiencia en escenas de acción y maniobras de precisión. Coordinamos secuencias completas de conducción para que cada toma sea perfecta y segura.",
+    "imageAlt": "Conductor especializado en una escena de acción",
+    "services": {
+      "professional": "Conductores profesionales con experiencia en producciones internacionales.",
+      "specialists": "Especialistas en derrapes, persecuciones y maniobras.",
+      "coordination": "Coordinación de secuencias complejas de conducción.",
+      "safety": "Máxima seguridad en todas las maniobras."
+    }
+  },
+  "testimonios": {
+    "title": "Testimonios",
+    "subtitle": "Lo que dicen nuestros clientes sobre nuestros servicios.",
+    "person1": {
+      "name": "Marcos López",
+      "role": "Director de Fotografía",
+      "quote": "El equipo de Cars4Films siempre cumple con nuestras expectativas. Los vehículos están en perfecto estado y su equipo técnico resuelve cualquier problema con rapidez."
+    },
+    "person2": {
+      "name": "Laura Sánchez",
+      "role": "Directora de Producción",
+      "quote": "La variedad de vehículos y la profesionalidad del equipo de Cars4Films ha sido clave para el éxito de nuestras producciones. El servicio de Carcare es excepcional."
+    },
+    "person3": {
+      "name": "Javier Martín",
+      "role": "Director",
+      "quote": "Los Precision Drivers de Cars4Films han realizado un trabajo impecable en mi última película. Su profesionalidad y habilidad han sido fundamentales para las escenas de acción."
+    }
+  },
+  "proyectos": {
+    "title": "Proyectos realizados",
+    "description": "Una selección de nuestros trabajos más destacados en cine, televisión y publicidad.",
+    "image1Alt": "Coche en una escena de publicidad",
+    "image2Alt": "Coche deportivo en la calle",
+    "image3Alt": "Detalle del interior de un coche clásico",
+    "image4Alt": "Vehículo técnico en una filmación",
+    "image5Alt": "Coche clásico con luces de neón",
+    "image6Alt": "Coche en una escena de persecución",
+    "image7Alt": "Foto artística de un coche de lujo",
+    "image8Alt": "Coche utilizado para un evento corporativo"
+  },
+  "contacto": {
+    "title": "Contáctanos",
+    "description": "Estamos listos para ayudarte a encontrar el vehículo perfecto para tu próximo proyecto. Envíanos un mensaje y te responderemos a la brevedad.",
+    "nameLabel": "Nombre",
+    "emailLabel": "Email",
+    "messageLabel": "Mensaje",
+    "submit": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "successMessage": "¡Gracias por contactarnos! Responderemos a tu mensaje lo antes posible."
+  },
+  "footer": {
+    "contactTitle": "Contacto",
+    "address": "Madrid, España",
+    "phone": "+34 123 456 789",
+    "email": "info@cars4films.com",
+    "followUs": "Síguenos",
+    "companyDescription": "Especialistas en vehículos para la industria audiovisual desde 2012. Ofrecemos soluciones completas para cine, publicidad y televisión.",
+    "rights": "Todos los derechos reservados"
+  }
+}

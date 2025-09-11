@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const HeroSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <header className="relative flex items-center justify-center w-full h-screen text-white overflow-hidden">
       <div className="absolute inset-0">
@@ -9,29 +13,27 @@ const HeroSection = () => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/src/assets/videos/porsche.mp4" type="video/mp4" />
-          Tu navegador no soporta el elemento de video.
+          {t('hero.videoFallback', 'Your browser does not support the video element.')}
         </video>
         <div className="absolute inset-0 bg-black opacity-60"></div>
       </div>
       <div className="relative z-10 text-center px-4 animate-fade-in-up">
         <h1 className="text-5xl md:text-7xl font-bold mb-4">Cars4Films</h1>
         <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8">
-          Especialistas en suministro de vehículos para producciones
-          audiovisuales. Coches clásicos, deportivos y vehículos especiales para
-          cine, publicidad y televisión.
+          {t('hero.description')}
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <a
             href="#flota"
             className="btn-primary px-8 py-3 text-lg font-semibold rounded-full hover:opacity-90 transition duration-300"
           >
-            Nuestra Flota
+            {t('hero.cta')}
           </a>
           <a
             href="#contacto"
             className="btn-secondary px-8 py-3 text-lg font-semibold rounded-full hover:bg-white hover:text-gray-900 transition duration-300"
           >
-            Contactar
+            {t('hero.contact')}
           </a>
         </div>
       </div>

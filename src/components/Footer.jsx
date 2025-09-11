@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <footer className="py-12 bg-gray-900">
       <div className="container mx-auto px-4">
@@ -8,25 +12,24 @@ const Footer = () => {
               Cars4Films
             </h3>
             <p className="text-gray-400">
-              Especialistas en vehículos para la industria audiovisual desde
-              2012. Ofrecemos soluciones completas para cine, publicidad y
-              televisión.
+              {t('footer.companyDescription')}
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">Contacto</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">{t('footer.contactTitle')}</h3>
             <address className="text-gray-400 not-italic">
-              <p>Madrid, España</p>
-              <p>+34 123 456 789</p>
-              <p>info@cars4films.com</p>
+              <p>{t('footer.address')}</p>
+              <p>{t('footer.phone')}</p>
+              <p>{t('footer.email')}</p>
             </address>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">Síguenos</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">{t('footer.followUs')}</h3>
             <div className="flex space-x-4">
               <a
                 href="#"
                 className="text-gray-400 hover:text-white transition duration-300"
+                aria-label="Facebook"
               >
                 <svg
                   className="h-6 w-6"
@@ -44,6 +47,7 @@ const Footer = () => {
               <a
                 href="#"
                 className="text-gray-400 hover:text-white transition duration-300"
+                aria-label="Instagram"
               >
                 <svg
                   className="h-6 w-6"
@@ -61,6 +65,7 @@ const Footer = () => {
               <a
                 href="#"
                 className="text-gray-400 hover:text-white transition duration-300"
+                aria-label="Twitter"
               >
                 <svg
                   className="h-6 w-6"
@@ -76,8 +81,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 border-t border-gray-800 pt-6 animate-fade-in-up">
           <p className="text-gray-400 text-center text-sm">
-            © {new Date().getFullYear()} Cars4Films. Todos los derechos
-            reservados.
+            © {new Date().getFullYear()} {t('footer.copyright')}
           </p>
         </div>
       </div>

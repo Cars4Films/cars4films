@@ -1,42 +1,45 @@
+import { useTranslation } from "react-i18next";
 import VehicleCard from "./VehicleCard";
 
 const TecnicosSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="tecnicos" className="py-20 bg-black">
       <div className="container mx-auto px-4 animate-fade-in-up">
         <h2 className="text-4xl font-bold text-center mb-4">
-          Vehículos Técnicos
+          {t('tecnicos.title')}
         </h2>
         <p className="text-center text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
-          Vehículos de producción especializados para capturar la toma perfecta.
+          {t('tecnicos.description')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Tarjeta de Camaracar */}
+          {/* Camaracar Card */}
           <VehicleCard
             image="/src/assets/img/camaracar.jpg"
-            title="Camaracar"
-            description="Vehículos de alta potencia y estabilidad para tomas de persecución y seguimiento."
+            titleKey="tecnicos.camaracar.title"
+            descriptionKey="tecnicos.camaracar.description"
           />
 
-          {/* Tarjeta de Low Loader */}
+          {/* Low Loader Card */}
           <VehicleCard
             image="/src/assets/img/lowloader.jpg"
-            title="Low Loader"
-            description="Plataformas de transporte de perfil bajo para mover coches de forma segura en el set."
+            titleKey="tecnicos.lowloader.title"
+            descriptionKey="tecnicos.lowloader.description"
           />
 
-          {/* Tarjeta de Vehículos de Asistencia */}
+          {/* Support Vehicles Card */}
           <VehicleCard
             image="/src/assets/img/furgo.jpg"
-            title="Vehículos de Asistencia"
-            description="Furgonetas y camiones equipados para cubrir cualquier necesidad técnica en el set."
+            titleKey="tecnicos.asistencia.title"
+            descriptionKey="tecnicos.asistencia.description"
           />
 
-          {/* Tarjeta de Motos */}
+          {/* Motorcycles Card */}
           <VehicleCard
             image="/src/assets/img/motocam.jpg"
-            title="Motos"
-            description="Moto electrica para escenas de acción ágiles o tomas urbanas que exigen velocidad y maniobrabilidad."
+            titleKey="tecnicos.motos.title"
+            descriptionKey="tecnicos.motos.description"
           />
         </div>
       </div>

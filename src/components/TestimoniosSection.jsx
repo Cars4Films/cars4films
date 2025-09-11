@@ -1,10 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 const TestimoniosSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="testimonios" className="py-20 bg-black">
       <div className="container mx-auto px-4 animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-center mb-4">Testimonios</h2>
+        <h2 className="text-4xl font-bold text-center mb-4">{t('testimonios.title')}</h2>
         <p className="text-center text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
-          Lo que dicen nuestros clientes sobre nuestros servicios.
+          {t('testimonios.subtitle')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-gray-900 p-6 rounded-2xl">
@@ -14,15 +18,13 @@ const TestimoniosSection = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-white text-lg font-semibold">
-                  Marcos López
+                  {t('testimonios.person1.name')}
                 </h4>
-                <p className="text-gray-500">Director de Fotografía</p>
+                <p className="text-gray-500">{t('testimonios.person1.role')}</p>
               </div>
             </div>
             <p className="text-gray-400">
-              "El equipo de Cars4Films siempre cumple con nuestras expectativas.
-              Los vehículos están en perfecto estado y su equipo técnico
-              resuelve cualquier problema con rapidez."
+              {t('testimonios.person1.quote')}
             </p>
             <div className="mt-4 flex">
               <svg
@@ -75,15 +77,13 @@ const TestimoniosSection = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-white text-lg font-semibold">
-                  Laura Sánchez
+                  {t('testimonios.person2.name')}
                 </h4>
-                <p className="text-gray-500">Directora de Producción</p>
+                <p className="text-gray-500">{t('testimonios.person2.role')}</p>
               </div>
             </div>
             <p className="text-gray-400">
-              "La variedad de vehículos y la profesionalidad del equipo de
-              Cars4Films ha sido clave para el éxito de nuestras producciones.
-              El servicio de Carcare es excepcional."
+              {t('testimonios.person2.quote')}
             </p>
             <div className="mt-4 flex">
               <svg
@@ -136,15 +136,13 @@ const TestimoniosSection = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-white text-lg font-semibold">
-                  Javier Martín
+                  {t('testimonios.person3.name')}
                 </h4>
-                <p className="text-gray-500">Director</p>
+                <p className="text-gray-500">{t('testimonios.person3.role')}</p>
               </div>
             </div>
             <p className="text-gray-400">
-              "Los Precision Drivers de Cars4Films han realizado un trabajo
-              impecable en mi última película. Su profesionalidad y habilidad
-              han sido fundamentales para las escenas de acción."
+              {t('testimonios.person3.quote')}
             </p>
             <div className="mt-4 flex">
               <svg
