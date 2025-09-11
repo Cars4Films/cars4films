@@ -1,0 +1,35 @@
+const CarcareSection = () => {
+  return (
+    <section id="carcare" className="py-20 bg-black">
+      <div className="container mx-auto px-4 animate-fade-in-up">
+        <div className="md:flex md:items-center md:space-x-12">
+          <div className="md:w-1/2 mb-8 md:mb-0">
+            <img
+              src="/src/assets/img/carcare.png"
+              alt="Detalle de un coche limpio"
+              className="rounded-2xl shadow-xl w-full h-auto object-cover"
+            />
+          </div>
+          <div className="md:w-1/2">
+            <h2 className="text-4xl font-bold mb-4 text-white">Car Care</h2>
+            <p className="text-lg text-gray-400 mb-6">
+              Mantén tus vehículos de para el rodaje en perfectas condiciones
+              con nuestro servicio de Carcare y Carcare Mecanico. Nuestro equipo
+              especializado se encarga de la limpieza, mantenimiento y
+              preparación de cada vehículo para que luzca impecable en cada
+              toma, adaptandonos siempre a las necesidades del rodaje.
+            </p>
+            <ul className="list-disc list-inside text-gray-400 space-y-2">
+              <li>Limpieza interior y exterior profunda, si se solicita.</li>
+              <li>Preparacion del vehiculo para cada necesidad.</li>
+              <li>Mantenimiento de motor para un rendimiento óptimo.</li>
+              <li>Reparaciones en el set con las premisas solicitadas.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CarcareSection;
