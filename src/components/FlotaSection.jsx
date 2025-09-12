@@ -12,12 +12,12 @@ const FlotaSection = () => {
           {t('flota.description')}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Classic Cars Card */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">          {/* Classic Cars Card */}
           <VehicleCard
             image="/src/assets/img/clasico.jpg"
             titleKey="flota.clasicos.title"
             descriptionKey="flota.clasicos.description"
+            type="big"
           />
 
           {/* Sports Cars Card */}
@@ -25,6 +25,7 @@ const FlotaSection = () => {
             image="/src/assets/img/deportivo.jpeg"
             titleKey="flota.deportivos.title"
             descriptionKey="flota.deportivos.description"
+            type="big"
           />
 
           {/* Special Vehicles Card */}
@@ -32,6 +33,7 @@ const FlotaSection = () => {
             image="/src/assets/img/policia.jpg"
             titleKey="flota.especiales.title"
             descriptionKey="flota.especiales.description"
+            type="big"
           />
         </div>
 
