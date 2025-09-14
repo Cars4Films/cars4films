@@ -5,10 +5,10 @@ const FlotaSection = () => {
   const { t } = useTranslation();
   
   return (
-    <section id="flota" className="py-20 bg-black">
+    <section id="flota" className="py-20 bg-theme-main">
       <div className="container mx-auto px-4 animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-center mb-4">{t('flota.title')}</h2>
-        <p className="text-center text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-4 text-theme-primary">{t('flota.title')}</h2>
+        <p className="text-center text-lg text-theme-muted mb-12 max-w-3xl mx-auto">
           {t('flota.description')}
         </p>
 

@@ -4,7 +4,7 @@ const DriverSection = () => {
   const { t } = useTranslation();
   
   return (
-    <section id="driver" className="py-20 bg-black">
+    <section id="driver" className="py-20 bg-theme-main">
       <div className="container mx-auto px-4 animate-fade-in-up">
         <div className="md:flex md:items-center md:space-x-12 flex-row-reverse">
           <div className="md:w-1/2 mb-8 md:mb-0">
@@ -15,13 +15,13 @@ const DriverSection = () => {
             />
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-4xl font-bold mb-4 text-white">
+            <h2 className="text-4xl font-bold mb-4 text-theme-primary">
               {t('driver.title')}
             </h2>
-            <p className="text-lg text-gray-400 mb-6">
+            <p className="text-lg text-theme-muted mb-6">
               {t('driver.description')}
             </p>
-            <ul className="list-disc list-inside text-gray-400 space-y-2">
+            <ul className="list-disc list-inside text-theme-muted space-y-2">
               <li>{t('driver.services.professional')}</li>
               <li>{t('driver.services.specialists')}</li>
               <li>{t('driver.services.coordination')}</li>

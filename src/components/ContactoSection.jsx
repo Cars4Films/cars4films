@@ -41,26 +41,26 @@ const ContactoSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-20 bg-gray-900">
+    <section id="contacto" className="py-20 bg-theme-secondary">
       <div className="container mx-auto px-4 animate-fade-in-up">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-white">
+          <h2 className="text-4xl font-bold text-center mb-4 text-theme-primary">
             {t('contacto.title')}
           </h2>
-          <p className="text-center text-lg text-gray-400 mb-12">
+          <p className="text-center text-lg text-theme-muted mb-12">
             {t('contacto.description')}
           </p>
 
-          <div className="bg-gray-800 rounded-2xl p-8 shadow-xl">
+          <div className="bg-theme-tertiary rounded-2xl p-8 shadow-xl">
             {formSubmitted ? (
-              <div className="bg-green-800 text-white p-4 rounded-lg mb-6 animate-fade-in transition-all">
+              <div className="bg-green-800 text-theme-primary p-4 rounded-lg mb-6 animate-fade-in transition-all">
                 {t('contacto.successMessage')}
               </div>
             ) : null}
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="name" className="block text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-theme-muted mb-2">
                     {t('contacto.nameLabel')}
                   </label>
                   <input
@@ -69,12 +69,12 @@ const ContactoSection = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                    className="w-full bg-theme-secondary border border-gray-600 text-theme-primary rounded-lg p-3 focus:outline-none focus:border-blue-500"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-theme-muted mb-2">
                     {t('contacto.emailLabel')}
                   </label>
                   <input
@@ -83,13 +83,13 @@ const ContactoSection = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                    className="w-full bg-theme-secondary border border-gray-600 text-theme-primary rounded-lg p-3 focus:outline-none focus:border-blue-500"
                     required
                   />
                 </div>
               </div>
               <div className="mb-6">
-                <label htmlFor="message" className="block text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-theme-muted mb-2">
                   {t('contacto.messageLabel')}
                 </label>
                 <textarea
@@ -98,7 +98,7 @@ const ContactoSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows="5"
-                  className="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                  className="w-full bg-theme-secondary border border-gray-600 text-theme-primary rounded-lg p-3 focus:outline-none focus:border-blue-500"
                   required
                 ></textarea>
               </div>

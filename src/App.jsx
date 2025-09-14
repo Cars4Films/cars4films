@@ -10,28 +10,25 @@ import ProyectosSection from "./components/ProyectosSection";
 import ContactoSection from "./components/ContactoSection";
 import Footer from "./components/Footer";
 import ImageRotator from "./components/ImageRotator";
-import "./App.css";
 
 function App() {
   return (
-    <>
-      <div lang="es" className="scroll-smooth">
-        <div className="antialiased">
-          <Navbar />
-          <HeroSection />
-          <AcercaSection />
-          <FlotaSection />
-          <TecnicosSection />
-          <CarcareSection />
-          <DriverSection />
-          <TestimoniosSection />
-          <ProyectosSection />
-          <ContactoSection />
-          <Footer />
-          <ImageRotator />
-        </div>
+    <div lang="es" className="scroll-smooth">
+      <div className="antialiased">
+        <Navbar />
+        <HeroSection />
+        <AcercaSection />
+        <FlotaSection />
+        <TecnicosSection />
+        <CarcareSection />
+        <DriverSection />
+        <TestimoniosSection />
+        <ProyectosSection />
+        <ContactoSection />
+        <Footer />
+        <ImageRotator />
       </div>
-    </>
+    </div>
   );
 }
 

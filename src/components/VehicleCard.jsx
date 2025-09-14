@@ -20,15 +20,15 @@ const VehicleCard = ({
   
   return (
     <div
-      className={`bg-gray-900 rounded-2xl overflow-hidden shadow-xl p-6 text-center transform transition duration-300 hover:scale-105 hover:bg-gray-800 ${className}`}
+      className={`bg-theme-component rounded-2xl overflow-hidden shadow-xl p-6 text-center transform transition duration-300 hover:scale-105 hover:bg-theme-tertiary ${className}`}
     >
       <img
         className={`rotating-image w-full ${imageHeight} object-cover rounded-lg mb-4`}
         src={image}
         alt={displayTitle}
       />
-      <h3 className="text-2xl font-semibold mb-2 text-white">{displayTitle}</h3>
-      <p className="text-gray-400">{displayDescription}</p>
+      <h3 className="text-2xl font-semibold mb-2 text-theme-primary">{displayTitle}</h3>
+      <p className="text-theme-muted">{displayDescription}</p>
     </div>
   );
 };

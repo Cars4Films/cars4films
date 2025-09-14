@@ -4,12 +4,12 @@ const ProyectosSection = () => {
   const { t } = useTranslation();
   
   return (
-    <section id="proyectos" className="py-20 bg-black">
+    <section id="proyectos" className="py-20 bg-theme-main">
       <div className="container mx-auto px-4 animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-center mb-4">
+        <h2 className="text-4xl font-bold text-center mb-4 text-theme-primary">
           {t('proyectos.title')}
         </h2>
-        <p className="text-center text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+        <p className="text-center text-lg text-theme-muted mb-12 max-w-3xl mx-auto">
           {t('proyectos.description')}
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

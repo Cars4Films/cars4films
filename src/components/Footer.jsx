@@ -4,31 +4,31 @@ const Footer = () => {
   const { t } = useTranslation();
   
   return (
-    <footer className="py-12 bg-gray-900">
+    <footer className="py-12 bg-theme-secondary">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in-up">
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">
+            <h3 className="text-xl font-semibold mb-4 text-theme-primary">
               Cars4Films
             </h3>
-            <p className="text-gray-400">
+            <p className="text-theme-muted">
               {t('footer.companyDescription')}
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">{t('footer.contactTitle')}</h3>
-            <address className="text-gray-400 not-italic">
+            <h3 className="text-xl font-semibold mb-4 text-theme-primary">{t('footer.contactTitle')}</h3>
+            <address className="text-theme-muted not-italic">
               <p>{t('footer.address')}</p>
               <p>{t('footer.phone')}</p>
               <p>{t('footer.email')}</p>
             </address>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">{t('footer.followUs')}</h3>
+            <h3 className="text-xl font-semibold mb-4 text-theme-primary">{t('footer.followUs')}</h3>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-theme-muted hover:text-theme-primary transition duration-300"
                 aria-label="Facebook"
               >
                 <svg
@@ -46,7 +46,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-theme-muted hover:text-theme-primary transition duration-300"
                 aria-label="Instagram"
               >
                 <svg
@@ -64,7 +64,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-theme-muted hover:text-theme-primary transition duration-300"
                 aria-label="Twitter"
               >
                 <svg
@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-800 pt-6 animate-fade-in-up">
-          <p className="text-gray-400 text-center text-sm">
+          <p className="text-theme-muted text-center text-sm">
             © {new Date().getFullYear()} {t('footer.copyright')}
           </p>
         </div>

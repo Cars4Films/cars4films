@@ -2,30 +2,32 @@ import { useTranslation } from "react-i18next";
 
 const TestimoniosSection = () => {
   const { t } = useTranslation();
-  
+
   return (
-    <section id="testimonios" className="py-20 bg-black">
+    <section id="testimonios" className="py-20 bg-theme-main">
       <div className="container mx-auto px-4 animate-fade-in-up">
-        <h2 className="text-4xl font-bold text-center mb-4">{t('testimonios.title')}</h2>
-        <p className="text-center text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
-          {t('testimonios.subtitle')}
+        <h2 className="text-4xl font-bold text-center mb-4 text-theme-primary">
+          {t("testimonios.title")}
+        </h2>
+        <p className="text-center text-lg text-theme-muted mb-12 max-w-3xl mx-auto">
+          {t("testimonios.subtitle")}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-gray-900 p-6 rounded-2xl">
+          <div className="bg-theme-component p-6 rounded-2xl">
             <div className="flex items-center mb-4">
-              <div className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-xl">
+              <div className="h-12 w-12 rounded-full bg-theme-secondary flex items-center justify-center text-theme-primary font-bold text-xl">
                 M
               </div>
               <div className="ml-4">
-                <h4 className="text-white text-lg font-semibold">
-                  {t('testimonios.person1.name')}
+                <h4 className="text-theme-primary text-lg font-semibold">
+                  {t("testimonios.person1.name")}
                 </h4>
-                <p className="text-gray-500">{t('testimonios.person1.role')}</p>
+                <p className="text-theme-muted">
+                  {t("testimonios.person1.role")}
+                </p>
               </div>
             </div>
-            <p className="text-gray-400">
-              {t('testimonios.person1.quote')}
-            </p>
+            <p className="text-theme-muted">{t("testimonios.person1.quote")}</p>
             <div className="mt-4 flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,21 +72,21 @@ const TestimoniosSection = () => {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-2xl">
+          <div className="bg-theme-component p-6 rounded-2xl">
             <div className="flex items-center mb-4">
-              <div className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-xl">
+              <div className="h-12 w-12 rounded-full bg-theme-secondary flex items-center justify-center text-theme-primary font-bold text-xl">
                 L
               </div>
               <div className="ml-4">
-                <h4 className="text-white text-lg font-semibold">
-                  {t('testimonios.person2.name')}
+                <h4 className="text-theme-primary text-lg font-semibold">
+                  {t("testimonios.person2.name")}
                 </h4>
-                <p className="text-gray-500">{t('testimonios.person2.role')}</p>
+                <p className="text-theme-muted">
+                  {t("testimonios.person2.role")}
+                </p>
               </div>
             </div>
-            <p className="text-gray-400">
-              {t('testimonios.person2.quote')}
-            </p>
+            <p className="text-theme-muted">{t("testimonios.person2.quote")}</p>
             <div className="mt-4 flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -129,21 +131,21 @@ const TestimoniosSection = () => {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-2xl">
+          <div className="bg-theme-component p-6 rounded-2xl">
             <div className="flex items-center mb-4">
-              <div className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-xl">
+              <div className="h-12 w-12 rounded-full bg-theme-secondary flex items-center justify-center text-theme-primary font-bold text-xl">
                 J
               </div>
               <div className="ml-4">
-                <h4 className="text-white text-lg font-semibold">
-                  {t('testimonios.person3.name')}
+                <h4 className="text-theme-primary text-lg font-semibold">
+                  {t("testimonios.person3.name")}
                 </h4>
-                <p className="text-gray-500">{t('testimonios.person3.role')}</p>
+                <p className="text-theme-muted">
+                  {t("testimonios.person3.role")}
+                </p>
               </div>
             </div>
-            <p className="text-gray-400">
-              {t('testimonios.person3.quote')}
-            </p>
+            <p className="text-theme-muted">{t("testimonios.person3.quote")}</p>
             <div className="mt-4 flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

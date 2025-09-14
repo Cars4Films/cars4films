@@ -2,11 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Theme colors */
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-secondary: #f59e0b;
+
+  /* Background colors */
+  --color-bg-main: #000000;
+  --color-bg-secondary: #111827;
+  --color-bg-tertiary: #1f2937;
+  --color-bg-component: #1f2937;
+
+  /* Text colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e5e7eb;
+  --color-text-muted: #9ca3af;
+}
+
 /* Custom styles from htmlToJsx.html */
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #000000;
-  color: #e5e7eb;
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-secondary);
 }
 
 .nav-link:hover {
@@ -14,8 +32,50 @@ body {
   transform: scale(1.05);
 }
 
-#tecnicos h2, #tecnicos h3, #tecnicos p {
-  font-family: 'Roboto', sans-serif;
+#tecnicos h2,
+#tecnicos h3,
+#tecnicos p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Utility classes for themed backgrounds */
+.bg-theme-main {
+  background-color: var(--color-bg-main);
+}
+
+.bg-theme-secondary {
+  background-color: var(--color-bg-secondary);
+}
+
+.bg-theme-tertiary {
+  background-color: var(--color-bg-tertiary);
+}
+
+.bg-theme-component {
+  background-color: var(--color-bg-component);
+}
+
+/* Text color utilities */
+.text-theme-primary {
+  color: var(--color-text-primary);
+}
+
+.text-theme-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-theme-muted {
+  color: var(--color-text-muted);
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
 }
 
 /* Animación de entrada */
@@ -25,12 +85,12 @@ body {
 
 @keyframes fadeInUp {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
