@@ -71,11 +71,12 @@ body {
 /* Button styles */
 .btn-primary {
   background-color: var(--color-primary);
-  color: var(--color-text-primary);
+  color: white;
 }
 
 .btn-primary:hover {
   background-color: var(--color-primary-dark);
+  color: rgb(184, 184, 184);
 }
 
 /* Animación de entrada */
