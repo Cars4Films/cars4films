@@ -47,9 +47,11 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/cars4films/"
                 className="text-theme-muted hover:text-theme-primary transition duration-300"
                 aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   className="h-6 w-6"
