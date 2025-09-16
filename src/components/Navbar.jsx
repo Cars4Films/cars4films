@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useTheme, themes } from "@/contexts/ThemeContext";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
-  const { theme, toggleTheme } = useTheme();
+  const { theme, themes, toggleTheme } = useTheme();
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [langMenuVisible, setLangMenuVisible] = useState(false);
   const [langMenuMobileVisible, setLangMenuMobileVisible] = useState(false);
