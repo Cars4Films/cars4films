@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import VehicleCard from "@/components/VehicleCard";
+import { clasico, deportivo, furgo, policia } from "@/assets";
 
 const FlotaSection = () => {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ const FlotaSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">          {/* Classic Cars Card */}
           <VehicleCard
-            image="/src/assets/img/clasico.jpg"
+            image={clasico}
             titleKey="flota.clasicos.title"
             descriptionKey="flota.clasicos.description"
             type="big"
@@ -22,7 +23,7 @@ const FlotaSection = () => {
 
           {/* Sports Cars Card */}
           <VehicleCard
-            image="/src/assets/img/deportivo.jpeg"
+            image={deportivo}
             titleKey="flota.deportivos.title"
             descriptionKey="flota.deportivos.description"
             type="big"
@@ -30,7 +31,7 @@ const FlotaSection = () => {
 
           {/* Special Vehicles Card */}
           <VehicleCard
-            image="/src/assets/img/policia.jpg"
+            image={policia}
             titleKey="flota.especiales.title"
             descriptionKey="flota.especiales.description"
             type="big"

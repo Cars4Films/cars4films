@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/contexts/ThemeContext";
+import { logo } from "@/assets";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -35,11 +36,7 @@ const Navbar = () => {
           href="#"
           className="text-2xl font-extrabold text-theme-primary animate-fade-in-up"
         >
-          <img
-            src="./src/assets/img/logo.png"
-            alt="Logo de Cars4Films"
-            className="h-11 md:h-14"
-          />
+          <img src={logo} alt="Logo de Cars4Films" className="h-11 md:h-14" />
         </a>{" "}
         <div className="hidden md:flex space-x-8 items-center animate-fade-in-up">
           <a href="#flota" className="nav-link transition duration-300">
