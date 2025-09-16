@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import VehicleCard from "@/VehicleCard";
+import VehicleCard from "@/components/VehicleCard";
 
 const FlotaSection = () => {
   const { t } = useTranslation();
