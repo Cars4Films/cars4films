@@ -15,7 +15,7 @@ const ProyectosSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="relative overflow-hidden rounded-lg aspect-[3/2] shadow-md">
             <img
-              src="/src/assets/img/carprosolutions.jpg"
+              src="./src/assets/img/carprosolutions.jpg"
               alt={t("proyectos.image1Alt", "Car in an advertising scene")}
               className="absolute inset-0 w-full h-full object-cover transform transition duration-300 hover:scale-105"
             />

@@ -36,7 +36,7 @@ const Navbar = () => {
           className="text-2xl font-extrabold text-theme-primary animate-fade-in-up"
         >
           <img
-            src="/src/assets/img/logo.png"
+            src="./src/assets/img/logo.png"
             alt="Logo de Cars4Films"
             className="h-11 md:h-14"
           />

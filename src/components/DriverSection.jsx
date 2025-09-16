@@ -9,7 +9,7 @@ const DriverSection = () => {
         <div className="md:flex md:items-center md:space-x-12 flex-row-reverse">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/src/assets/img/precision2.png"
+              src="./src/assets/img/precision2.png"
               alt={t('driver.imageAlt', 'Specialized driver in an action scene')}
               className="rounded-2xl shadow-xl w-full h-auto object-cover"
             />

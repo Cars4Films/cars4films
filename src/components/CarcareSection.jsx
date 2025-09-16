@@ -9,7 +9,7 @@ const CarcareSection = () => {
         <div className="md:flex md:items-center md:space-x-12">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/src/assets/img/carcare.png"
+              src="./src/assets/img/carcare.png"
               alt={t('carcare.imageAlt', 'Detail of a clean car')}
               className="rounded-2xl shadow-xl w-full h-auto object-cover"
             />

@@ -9,7 +9,7 @@ const AcercaSection = () => {
         <div className="md:flex md:items-center md:space-x-12">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/src/assets/img/marcos.png"
+              src="./src/assets/img/marcos.png"
               alt={t('acerca.imageAlt', 'Classic car image')}
               className="rounded-2xl shadow-xl w-full h-auto object-cover"
             />

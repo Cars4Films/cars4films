@@ -12,7 +12,7 @@ const HeroSection = () => {
           muted
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/src/assets/videos/porsche.mp4" type="video/mp4" />
+          <source src="./src/assets/videos/porsche.mp4" type="video/mp4" />
           {t('hero.videoFallback', 'Your browser does not support the video element.')}
         </video>
         <div className="absolute inset-0 bg-black opacity-60"></div>
