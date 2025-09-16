@@ -45,23 +45,23 @@ const ContactoSection = () => {
       <div className="container mx-auto px-4 animate-fade-in-up">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-theme-primary">
-            {t('contacto.title')}
+            {t("contacto.title")}
           </h2>
           <p className="text-center text-lg text-theme-muted mb-12">
-            {t('contacto.description')}
+            {t("contacto.description")}
           </p>
 
           <div className="bg-theme-tertiary rounded-2xl p-8 shadow-xl">
             {formSubmitted ? (
               <div className="bg-green-800 text-theme-primary p-4 rounded-lg mb-6 animate-fade-in transition-all">
-                {t('contacto.successMessage')}
+                {t("contacto.successMessage")}
               </div>
             ) : null}
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-theme-muted mb-2">
-                    {t('contacto.nameLabel')}
+                    {t("contacto.nameLabel")}
                   </label>
                   <input
                     type="text"
@@ -74,8 +74,11 @@ const ContactoSection = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-theme-muted mb-2">
-                    {t('contacto.emailLabel')}
+                  <label
+                    htmlFor="email"
+                    className="block text-theme-muted mb-2"
+                  >
+                    {t("contacto.emailLabel")}
                   </label>
                   <input
                     type="email"
@@ -89,8 +92,11 @@ const ContactoSection = () => {
                 </div>
               </div>
               <div className="mb-6">
-                <label htmlFor="message" className="block text-theme-muted mb-2">
-                  {t('contacto.messageLabel')}
+                <label
+                  htmlFor="message"
+                  className="block text-theme-muted mb-2"
+                >
+                  {t("contacto.messageLabel")}
                 </label>
                 <textarea
                   id="message"
@@ -110,7 +116,7 @@ const ContactoSection = () => {
                     isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                   }`}
                 >
-                  {isSubmitting ? t('contacto.sending') : t('contacto.submit')}
+                  {isSubmitting ? t("contacto.sending") : t("contacto.submit")}
                 </button>
               </div>
             </form>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useTheme, themes } from "../contexts/themeUtils";
+import { useTheme, themes } from "@/contexts/ThemeContext";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();

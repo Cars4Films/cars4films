@@ -1,18 +1,18 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
-import enTranslation from './locales/en.json';
-import esTranslation from './locales/es.json';
+import enTranslation from "@/locales/en.json";
+import esTranslation from "@/locales/es.json";
 
 // the translations
 const resources = {
   en: {
-    translation: enTranslation
+    translation: enTranslation,
   },
   es: {
-    translation: esTranslation
-  }
+    translation: esTranslation,
+  },
 };
 
 i18n
@@ -23,21 +23,21 @@ i18n
   // init i18next
   .init({
     resources,
-    fallbackLng: 'es',
-    debug: process.env.NODE_ENV === 'development',
-    
+    fallbackLng: "es",
+    debug: process.env.NODE_ENV === "development",
+
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
 
     // common namespace shared across all pages
-    ns: ['translation'],
-    defaultNS: 'translation',
+    ns: ["translation"],
+    defaultNS: "translation",
 
     // language detector options
     detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
     },
   });
 
