@@ -1,0 +1,51 @@
+{
+  "name": "cars4films-frontend",
+  "version": "0.0.1",
+  "description": "Frontend React application for Cars4Films - Car rental CRUD application",
+  "type": "module",
+  "private": true,
+  "author": {
+    "name": "@xarlizard",
+    "url": "https://github.com/xarlizard"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "vite",
+    "frontend",
+    "crud",
+    "cars4films",
+    "car-rental"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "i18next-browser-languagedetector": "^8.2.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "react-router": "^7.9.1",
+    "react-i18next": "^15.7.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
+  }
+}
