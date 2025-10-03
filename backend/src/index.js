@@ -23,12 +23,26 @@ app.set("trust proxy", 1);
 app.use(helmet());
 
 // CORS configuration
+const allowedOrigins = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(",").map((origin) => origin.trim())
+  : ["http://localhost:5173"];
+
+console.log("🔒 CORS allowed origins:", allowedOrigins);
+
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN || "http://localhost:5173",
+    origin: allowedOrigins,
     credentials: true,
   })
 );
+
+// Block requests without origin header
+app.use((req, res, next) => {
+  if (!req.get("origin") && req.path !== "/api/health" && req.path !== "/") {
+    return res.status(403).json({ error: "Forbidden" });
+  }
+  next();
+});
 
 // Compression middleware
 app.use(compression());
