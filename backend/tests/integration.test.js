@@ -2,7 +2,7 @@ import request from "supertest";
 import app from "../src/index.js";
 import prisma from "../src/services/database.js";
 
-describe("CarBnB API Integration Tests", () => {
+describe("Cars4Films API Integration Tests", () => {
   let testItemId;
 
   beforeAll(async () => {
